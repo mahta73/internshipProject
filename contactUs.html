@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='./style.css' rel='stylesheet' />
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- Logo & menu-->
+    <div class='menu'>
+        <div class='menu__content'>
+            <div class='menu__content__container'>
+                <a href='./index.html'>
+                    <div>
+                        <img class='menu__content__logo' src='./imgs/logo.png' placeholder='logo' />
+                    </div>
+                </a>
+
+                <div class='menu__content__lst'>
+                    <a href="./index.html">home</a>
+                    <a href="./index.html#about-us">about us</a>
+                    <a href="./contactUs.html">contact us</a>
+                    <a href="./faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <p class = 'contactUs__header'>Contact Us</p>
+    <div class = 'contactUs'>
+        <P class = 'contactUs__message'>
+            Got a question? We'd &#10084; to hear from you. Send us a message and we'll respond as soon as possible.
+        </P>
+        <form class = 'contactUs__form'>
+            <input type="text" class = 'contactUs__form__input' placeholder="Name"/>
+            <input type="text" class = 'contactUs__form__input' placeholder="Surname" />
+            <input type="email" class = 'contactUs__form__input' placeholder="Emai Address" />
+
+            <textarea placeholder="message ..." class = 'contactUs__form__input contactUs__form__message' ></textarea>
+            <input type="submit" class = 'contactUs__form__input' />
+        </form>
+    </div>
+    <!-- footer -->
+    <footer class='footer'>
+        <div class='footer__socialMedia'>
+            <p class='footer__socialMedia__title'>
+                Contact with us
+            </p>
+            <img class='footer_socialMedia_logo' src="./imgs/socialMedia/instagram.png" alt="instagram logo" />
+            <img class='footer_socialMedia_logo' src="./imgs/socialMedia/facebook.png" alt="facebook logo" />
+            <img class='footer_socialMedia_logo' src="./imgs/socialMedia/telegram.png" alt="telegram logo" />
+        </div>
+
+        <div class='footer_subscription'>
+            <p class='footer_subscription_title'>
+                Subscription
+            </p>
+            <form class='subsc__form'>
+                <!--
+                        <label 
+                        for="email"
+                        class = 'subsc__form__lable'
+                        >
+                            Email Address:
+                        </label>
+                        -->
+                <input class='subs__form__email subs--form--fancy' type="email" placeholder="Email Address"
+                    id='email' />
+                <input class='subs__form__sub subs--form--fancy' type="submit" id='submit' />
+                <form>
+        </div>
+    </footer>
+</body>
+
+</html>
