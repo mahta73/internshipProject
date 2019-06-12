@@ -12,40 +12,51 @@
 <body>
     <!-- Logo & menu-->
     <div class='menu'>
-        <div class = 'menu__content'>
-            <div class = 'menu__content__container'>
+        <div class='menu__content'>
+            <div class='menu__content__container'>
                 <a href="./index.html">
                     <div>
-                        <img class='menu__content__logo' src='./imgs/logo.png' placeholder='logo' />
+                        <img class='menu__content__logo' src='./imgs/logos/logo.png'
+                            placeholder="The girls who code's logo" />
                     </div>
                 </a>
 
-                <div class='menu__content__lst'>
-                    <a href="./index.html">home</a>
-                    <a href="./index.html#about-us">about us</a>
-                    <a href="./contactUs.html">contact us</a>
-                    <a href="./faq.html">FAQ</a>
+                <div class='menu__content__items'>
+                    <a class='menu__content__item' href="./index.html#about-us">about</a>
+                    <a class='menu__content__item' href="./index.html#core-mentors">mentors</a>
+                    <a class='menu__content__item' href="./index.html#f-a-q">FAQ</a>
+                    <a class='menu__content__item' href="./index.html#contact-us">contact us</a>
                 </div>
             </div>
         </div>
 
-        <div>
-            <img 
-                class = 'menu__backgroundImg'
-                src="./imgs/coderGirls/menuBackground.jpg" 
-                alt="menue background image"
-            />
+        <div class='menu__content__responsive'>
+            <a href="./index.html">
+                <img class='menu__content__responsive__miniLogo' src="./imgs/logos/miniLogo.png"
+                    alt="The girls who code's logo">
+            </a>
+            <div>
+                <img class='menu__content__responsive__icon' src="./imgs/icons/responsiveMenu.png" alt="menu icon">
+            </div>
+        </div>
+
+        <div class='menu__background'>
+            <img class='menu__background__img' src="./imgs/coderGirls/menuBackground.jpg"
+                alt="menue background image" />
         </div>
     </div>
 
-    
-
     <!-- subscription -->
-    <div class='subsc subsc--radius subs--shadow'>
 
-        <h1 class='subsc__msg'>
-                &#10084; Join the girls who code movement
-        </h1>
+    <div class='subsc'>
+        <p class='subsc__msg'>
+            <span class='subsc__msg__heart'>
+                &#10084;
+            </span>
+            Join
+            <img class='subsc__msg__img' src="./imgs/logos/secondLogo.png" alt="The girls who code">
+            movement
+        </p>
         <form class='subsc__form'>
             <!--
             <label 
@@ -57,80 +68,144 @@
             -->
             <input class='subs__form__email subs--form--fancy' type="email" placeholder="Email Address" id='email' />
             <input class='subs__form__sub subs--form--fancy' type="submit" id='submit' />
-        <form>
-
+            <form>
     </div>
 
     <!-- about us -->
-    <div id = 'about-us'>
-    <p class = 'aboutUs__header'>About us</p>
-    <div class = 'aboutUs'>
-        <div>
-            <img 
-                class = 'aboutUs__image'
-                src="./imgs/coderGirls/coderGirlsAboutUs.jpeg" 
-                alt="coder girl" 
-            />
+    <p id='about-us' class='title'>What is the girls who code mission?</p>
+    <div class='aboutUs'>
+
+        <div class='aboutUs__mission'>
+            <img class='aboutUs__img' src="./imgs/statistics/the-problem_graph-1.png" alt="the girls who code" />
+
+            <p class='aboutUs__text'>
+                Girls Who Code is a nonprofit organization which aims to support and increase the number of women in
+                computer science. Girls Who Code is on a mission to close the gender gap in technology and to change the
+                image of what a programmer looks like and does.
+                <br />
+                In 1995, 37% of computer scientists were women. Today, it’s only 24%. If we do nothing, in ten years the
+                number of women in computing will decrease to just 22%.
+            </p>
         </div>
 
-        <div class = 'aboutUs__content'>
-            <p>
-                Girls Who Code is a nonprofit organization which aims to support and increase the number of women in computer science. 
-                Girls Who Code is on a mission to close the gender gap in technology and to change the image of what a programmer looks like and does.
+        <div class='aboutUs__mission aboutUs__mission__responsive'>
+
+            <p class='aboutUs__text'>
+                While girls’ participation in computer science ebbs over time, the biggest drop off happens between the
+                ages of 13-17.
             </p>
-            <p>
-                In 1995, 37% of computer scientists were women. Today, it’s only 24%. If we do nothing, in ten years the number of women in computing will decrease to just 22%.
-            </p>
+
+            <img class='aboutUs__img ' src="./imgs/coderGirls/code_like_a_girl.jpg" alt="the girls who code" />
         </div>
     </div>
 
     <!-- MENTORS -->
-    <p class = 'mentors__header'>Core mentors</p>
-    <div class = 'mentors'>
-        <div class = 'mentors__details'>
+    <p id='core-mentors' class='title'>Core mentors</p>
+    <div class='mentors'>
+        <div class='mentors__details'>
             <div>
-                <img
-                    class = 'mentors__details__photos' 
-                    src="./imgs/mentors/adam.jpeg" 
-                    alt="Adam Smit" 
-                />
+                <img class='mentors__details__photos codeColorShadow' src="./imgs/mentors/adam.jpeg" alt="Adam Smit" />
             </div>
-            <div class = 'mentors__details__info'>
-                <p class = 'mentors__details__names'>Adam Smit</p>
+            <div class='mentors__details__info'>
+                <p class='mentors__details__names'>Adam Smit</p>
                 <p>CTO at IBM</p>
             </div>
         </div>
 
-        <div class = 'mentors__details'>
+        <div class='mentors__details'>
             <div>
-                <img
-                    class = 'mentors__details__photos' 
-                    src="./imgs/mentors/daniella.jpg" 
-                    alt="Daniella Mosby" 
-                />
+                <img class='mentors__details__photos girlsWhoColorShadow' src="./imgs/mentors/daniella.jpg"
+                    alt="Daniella Mosby" />
             </div>
-            <div class = 'mentors__details__info'>
-                <p class = 'mentors__details__names'>Daniella Mosby</p>
+            <div class='mentors__details__info'>
+                <p class='mentors__details__names'>Daniella Mosby</p>
                 <p>Front-End Architect at Microsoft </p>
             </div>
-            
+
         </div>
 
-        <div class = 'mentors__details'>
+        <div class='mentors__details'>
             <div>
-                <img
-                    class = 'mentors__details__photos' 
-                    src="./imgs/mentors/ted.jpeg" 
-                    alt="Ted Pitt" 
-                />
+                <img class='mentors__details__photos codeColorShadow' src="./imgs/mentors/ted.jpeg" alt="Ted Pitt" />
             </div>
-            <div class = 'mentors__details__info'>
-                <p class = 'mentors__details__names'>Ted Pitt</p>
+            <div class='mentors__details__info'>
+                <p class='mentors__details__names'>Ted Pitt</p>
                 <p>Project Manager at Girls who Code</p>
             </div>
         </div>
     </div>
-</div>
+    </div>
+
+    <!-- FAQ -->
+    <p id = 'f-a-q' class = 'title'>Frequently Asked Questions</p>
+    <div class='faq'>
+            <div>
+                <p class='faq__question'>What is Girls Who Code HQ<span class = 'girlsWhoColor'>?</span></p>
+                <p class='faq__answer'>
+                    Girls Who Code HQ is the official platform for all Girls Who Code programs!
+        
+                    Girls Who Code HQ (generally just called "HQ") is where we provide resources to our members, including our
+                    unique curriculum, coding activities, and more.
+        
+                    On the first day of Club programming, all students and Facilitators will need to sign up for HQ using their
+                    Club's unique Club Code.
+                </p>
+            </div>
+    
+            <div>
+                <p class='faq__question'>How do I sign up for HQ as a member <span class = 'girlsWhoColor'>?</span></p>
+                <p class='faq__answer'>
+                    HQ is the Girls Who Code (GWC) learning platform where we provide all resources and free activities, so it
+                    is important to register when you join your Club.
+            
+                    As a student, you will sign up for Girls Who Code HQ using an email address and your Club's unique Club
+                    Code. You will receive your Club Code from your Facilitator at the first Club meeting. If you are a student
+                    under 13, you will also need to provide a parent's email address to sign up.
+    
+                </p>
+            </div>
+            
+            <div>
+                <p class='faq__question'>What is a Girls Who Code Club<span class = 'girlsWhoColor'>?</span></p>
+                <p class='faq__answer'>
+                    Girls Who Code (GWC) Clubs are free extracurricular programs for 3rd-5th and 6th-12th grade girls that teach
+                    participants about Computer Science (CS) in a fun and safe environment!
+            
+                    GWC Clubs take place throughout the academic year. They serve as a place for girls to spend time together
+                    while learning about CS and building their confidence.
+            
+                    Clubs provide participants with a sisterhood of supportive peers and role models, and an opportunity to use
+                    their skills to positively impact their community.
+            
+                </p>
+            </div>
+            
+            <div>
+                <p class='faq__question'>In what countries are Girls Who Code Clubs offered<span class = 'girlsWhoColor'>?</span></p>
+                <p class='faq__answer'>
+                    This year, Girls Who Code is expanding our Club programming to Canada and the United Kingdom!
+            
+                    If you are interested in launching a Girls Who Code Club in Canada or the U.K., you may apply to do so by
+                    creating a FluidReview account and submitting an application here.
+                </p>
+            </div>
+        </div>
+
+    <!--CONTACT US -->
+    <p id='contact-us' class="title">Contact with Us</p>
+    <div class='contactUs'>
+            <P class='contactUs__message'>
+                Got a question? We'd <span class = 'girlsWhoColor'>&#10084;</span> to hear from you. Send us a message and we'll respond as soon as possible.
+            </P>
+            <form class='contactUs__form'>
+                <input type="text" class='contactUs__form__input' placeholder="Name" />
+                <input type="text" class='contactUs__form__input' placeholder="Surname" />
+                <input type="email" class='contactUs__form__input' placeholder="Emai Address" />
+
+                <textarea placeholder="message ..." class='contactUs__form__input contactUs__form__message'></textarea>
+                <input type="submit" class='contactUs__form__input contactUs__form__sub' />
+            </form>
+    </div>
 
     <!-- footer -->
     <footer class='footer'>
@@ -159,7 +234,7 @@
                 <input class='subs__form__email subs--form--fancy' type="email" placeholder="Email Address"
                     id='email' />
                 <input class='subs__form__sub subs--form--fancy' type="submit" id='submit' />
-            <form>
+                <form>
         </div>
     </footer>
 
