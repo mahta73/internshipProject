@@ -32,7 +32,7 @@ body {
     text-align: center;
     font-size: 2.5em;
     color: #212829;
-    margin-top: 6em;
+    margin-top: 3em;
     margin-bottom: 1em;
 }
 
@@ -109,11 +109,11 @@ body {
 }
 
 .subsc {
-    text-align: center;
-    margin-top: 6em;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .subsc__msg {
@@ -148,6 +148,16 @@ body {
 
 /* ABOUT US */
 
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUs {
+    min-height: 100vh;
+}
+
 .aboutUs__img__container {
     margin-right: auto;
     margin-left: auto;
@@ -179,19 +189,22 @@ body {
 
 /* MENTORS */
 
+#core-mentors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .mentors {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .mentors__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -200,7 +213,8 @@ body {
     width:180px;
     height: 180px;
     transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s; 
+    -webkit-transition: all 0.5s;
+    margin: 1em; 
 }
 
 .mentors__details__photos:hover {
@@ -249,6 +263,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2em;
+    min-height: 100vh;
 }
 
 .faq__header {
@@ -277,6 +292,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    min-height: 100vh;
 }
 
 .contactUs__message {
