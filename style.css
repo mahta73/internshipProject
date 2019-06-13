@@ -28,11 +28,26 @@ body {
     box-shadow: 0 0 1em #DA2B70;
 }
 
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #212829;
+    margin-top: 6em;
+    margin-bottom: 1em;
+}
+
 /* LOGO AND MENU */ 
 
 .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+}
+
+.menu__content {
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.1);
 }
 
 .menu__content__container {
@@ -40,6 +55,11 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.menu__content__logo {
+    width: 200px;
+    height: auto;
 }
 
 .menu__content__item {
@@ -75,6 +95,7 @@ body {
 .menu__background__img {
     width: 100%;
     height: auto;
+    margin-top: 2em;
 }
 
 /* SUBSCRIPTION */
@@ -127,12 +148,6 @@ body {
 
 /* ABOUT US */
 
-.title {
-    text-align: center;
-    font-size: 2.5em;
-    color: #212829;
-}
-
 .aboutUs__img__container {
     margin-right: auto;
     margin-left: auto;
@@ -171,7 +186,6 @@ body {
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 3em;
 }
 
 .mentors__details {
